@@ -1,3 +1,4 @@
+// vim: ft=cpp
 #include <Arduino.h>
 
 // Include the required Arduino libraries:
