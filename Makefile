@@ -19,3 +19,6 @@ update:
 
 compiledb:
 	pio -f -c vim run -t compiledb
+
+codegen:
+	elixir code_gen/scales_code_generator.exs
