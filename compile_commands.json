@@ -1,0 +1,282 @@
+[
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/CDC.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/CDC.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/CDC.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/HardwareSerial.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/HardwareSerial0.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial0.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial0.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/HardwareSerial1.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial1.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial1.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/HardwareSerial2.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial2.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial2.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/HardwareSerial3.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial3.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/HardwareSerial3.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/IPAddress.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/IPAddress.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/IPAddress.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/PluggableUSB.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/PluggableUSB.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/PluggableUSB.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/Print.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/Print.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/Print.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/Stream.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/Stream.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/Stream.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/Tone.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/Tone.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/Tone.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/USBCore.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/USBCore.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/USBCore.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/uno/FrameworkArduino/WInterrupts.c.o -c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/WInterrupts.c",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/WInterrupts.c"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/WMath.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/WMath.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/WMath.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/WString.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/WString.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/WString.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/abi.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/abi.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/abi.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/uno/FrameworkArduino/hooks.c.o -c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/hooks.c",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/hooks.c"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/main.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/main.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/main.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/FrameworkArduino/new.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/new.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/new.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/uno/FrameworkArduino/wiring.c.o -c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring.c",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring.c"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/uno/FrameworkArduino/wiring_analog.c.o -c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_analog.c",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_analog.c"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/uno/FrameworkArduino/wiring_digital.c.o -c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_digital.c",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_digital.c"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-as -x assembler-with-cpp -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -o .pio/build/uno/FrameworkArduino/wiring_pulse.S.o /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_pulse.S",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_pulse.S"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/uno/FrameworkArduino/wiring_pulse.c.o -c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_pulse.c",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_pulse.c"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/uno/FrameworkArduino/wiring_shift.c.o -c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_shift.c",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino/wiring_shift.c"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/lib2f2/Dictionary/BufferStream/BaseBufferStream.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/Dictionary/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/Dictionary/src/BufferStream/BaseBufferStream.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/Dictionary/src/BufferStream/BaseBufferStream.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/lib2f2/Dictionary/BufferStream/ReadBufferStream.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/Dictionary/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/Dictionary/src/BufferStream/ReadBufferStream.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/Dictionary/src/BufferStream/ReadBufferStream.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/lib2f2/Dictionary/BufferStream/WriteBufferStream.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/Dictionary/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/Dictionary/src/BufferStream/WriteBufferStream.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/Dictionary/src/BufferStream/WriteBufferStream.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/uno/lib2f2/Dictionary/shoco/shoco.c.o -c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/Dictionary/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/Dictionary/src/shoco/shoco.c",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/Dictionary/src/shoco/shoco.c"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-gcc -o .pio/build/uno/lib2f2/Dictionary/smaz/smaz.c.o -c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/Dictionary/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/Dictionary/src/smaz/smaz.c",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/Dictionary/src/smaz/smaz.c"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/lib28f/SPI/SPI.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard /Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src/SPI.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src/SPI.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/lib1c8/MD_MAX72XX/MD_MAX72xx.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_MAX72XX/src/MD_MAX72xx.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_MAX72XX/src/MD_MAX72xx.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/lib1c8/MD_MAX72XX/MD_MAX72xx_buf.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_MAX72XX/src/MD_MAX72xx_buf.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_MAX72XX/src/MD_MAX72xx_buf.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/lib1c8/MD_MAX72XX/MD_MAX72xx_font.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_MAX72XX/src/MD_MAX72xx_font.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_MAX72XX/src/MD_MAX72xx_font.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/lib1c8/MD_MAX72XX/MD_MAX72xx_pix.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_MAX72XX/src/MD_MAX72xx_pix.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_MAX72XX/src/MD_MAX72xx_pix.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_PZone.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_PZone.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_PZone.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Blinds.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Blinds.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Blinds.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Close.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Close.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Close.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Diag.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Diag.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Diag.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Dissolve.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Dissolve.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Dissolve.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Fade.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Fade.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Fade.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Grow.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Grow.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Grow.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_HScroll.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_HScroll.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_HScroll.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Mesh.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Mesh.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Mesh.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Open.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Open.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Open.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Print.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Print.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Print.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Random.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Random.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Random.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Scan.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Scan.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Scan.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Slice.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Slice.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Slice.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Sprite.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Sprite.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Sprite.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_VScroll.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_VScroll.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_VScroll.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libad0/MD_Parola/MD_Parola_Wipe.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/MD_Parola/src/MD_Parola_Wipe.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src/MD_Parola_Wipe.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/libb4f/RotaryEncoder/RotaryEncoder.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -I.pio/libdeps/uno/RotaryEncoder/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard .pio/libdeps/uno/RotaryEncoder/src/RotaryEncoder.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/RotaryEncoder/src/RotaryEncoder.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/src/Music.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Iinclude -Isrc -I.pio/libdeps/uno/RotaryEncoder/src -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I.pio/libdeps/uno/Dictionary/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard src/Music.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/src/Music.cpp"
+    },
+    {
+        "command": "/Users/dorian/.platformio/packages/toolchain-atmelavr/bin/avr-g++ -o .pio/build/uno/src/RiffBox.cpp.o -c -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p -DPLATFORMIO=50101 -DARDUINO_AVR_UNO -DF_CPU=16000000L -DARDUINO_ARCH_AVR -DARDUINO=10808 -Iinclude -Isrc -I.pio/libdeps/uno/RotaryEncoder/src -I.pio/libdeps/uno/MD_Parola/src -I.pio/libdeps/uno/MD_MAX72XX/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src -I.pio/libdeps/uno/Dictionary/src -I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino -I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard src/RiffBox.cpp",
+        "directory": "/Users/dorian/Documents/PlatformIO/Projects/riffbox",
+        "file": "/Users/dorian/Documents/PlatformIO/Projects/riffbox/src/RiffBox.cpp"
+    }
+]
