@@ -1,0 +1,27 @@
+clang
+
+%c -std=gnu11 -fno-fat-lto-objects -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p
+%cpp -fno-exceptions -fno-threadsafe-statics -fpermissive -std=gnu++11 -Os -Wall -ffunction-sections -fdata-sections -flto -mmcu=atmega328p
+
+-I/Users/dorian/Documents/PlatformIO/Projects/riffbox/include
+-I/Users/dorian/Documents/PlatformIO/Projects/riffbox/src
+-I/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/Dictionary/src
+-I/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_MAX72XX/src
+-I/Users/dorian/Documents/PlatformIO/Projects/riffbox/.pio/libdeps/uno/MD_Parola/src
+-I/Users/dorian/.platformio/packages/framework-arduino-avr/cores/arduino
+-I/Users/dorian/.platformio/packages/framework-arduino-avr/variants/standard
+-I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src
+-I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/HID/src
+-I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SPI/src
+-I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src
+-I/Users/dorian/.platformio/packages/framework-arduino-avr/libraries/Wire/src
+-I/Users/dorian/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include
+-I/Users/dorian/.platformio/packages/toolchain-atmelavr/lib/gcc/avr/7.3.0/include-fixed
+-I/Users/dorian/.platformio/packages/toolchain-atmelavr/avr/include
+
+-DPLATFORMIO=50101
+-DARDUINO_AVR_UNO
+-DF_CPU=16000000L
+-DARDUINO_ARCH_AVR
+-DARDUINO=10808
+-D__AVR_ATmega328P__
