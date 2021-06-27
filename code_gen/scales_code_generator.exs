@@ -31,13 +31,14 @@ defmodule ScalesCodeGenerator do
 
   def run do
     generate_keys()
-    |> Enum.map(fn key ->
-      {key, generate_scales_for_key(key)}
-    end)
-    |> Enum.into(%{})
+    |> Enum.map(fn key -> {key, generate_scales_for_key(key)} end)
+    |> Enum.map(&key_modes_to_cpp/1)
+    |> List.flatten()
+    |> Enum.join("\n")
+    |> IO.puts()
   end
 
-  def generate_keys do
+  defp generate_keys do
     @notes
     |> Enum.reduce([], fn next_note, acc ->
       case List.last(acc) do
@@ -167,6 +168,27 @@ defmodule ScalesCodeGenerator do
     else
       virtual_index
     end
+  end
+
+  defp note_to_const_name(note) do
+    note
+    |> String.split("")
+    |> Enum.map(fn
+      "#" -> "Sharp"
+      "b" -> "Flat"
+      note -> String.downcase(note)
+    end)
+  end
+
+  defp key_modes_to_cpp({key, modes}) do
+    modes
+    |> Enum.map(fn {mode_name, notes} ->
+      mode = mode_name |> Atom.to_string() |> String.capitalize()
+      size = length(notes)
+      notes = notes |> Enum.map(fn n -> "\"#{n}\"" end) |> Enum.join(", ")
+      var_name = "#{note_to_const_name(key)}#{mode}"
+      "char *#{var_name}[#{size}] = {#{notes}};"
+    end)
   end
 
   defp sharp?(note), do: String.match?(note, ~r/[A-Z]#/)
