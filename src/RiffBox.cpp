@@ -1,12 +1,12 @@
 #include <Arduino.h>
 
 // Include the required Arduino libraries:
-#include <MD_Parola.h>
+#include <Dictionary.h>
 #include <MD_MAX72xx.h>
+#include <MD_Parola.h>
+#include <RotaryEncoder.h>
 #include <SPI.h>
 #include <string.h>
-#include <Dictionary.h>
-#include <RotaryEncoder.h>
 
 // MAX72XX Hardware SPI:
 #define HARDWARE_TYPE MD_MAX72XX::FC16_HW
@@ -28,7 +28,8 @@ int keyIndex = 0;
 
 const int RIFF_NOTE_COUNT = 4;
 
-char *notes[NOTE_COUNT] = {"C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"};
+char *notes[NOTE_COUNT] = {"C",  "C#", "D",  "D#", "E",  "F",
+                           "F#", "G",  "G#", "A",  "A#", "B"};
 char *major[] = {"1", "2", "3", "4", "5", "6", "7"};
 char *minor[] = {"1", "2", "b3", "4", "5", "b6", "b7"};
 
@@ -42,12 +43,9 @@ MD_Parola myDisplay = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
 // Setup a RotaryEncoder with 2 steps per latch for the 2 signal input pins:
 RotaryEncoder encoder(inputCLK, inputDT, RotaryEncoder::LatchMode::FOUR3);
 
-int getNoteIndex(char *note)
-{
-  for (int i = 0; i < NOTE_COUNT; i++)
-  {
-    if (notes[i] == note)
-    {
+int getNoteIndex(char *note) {
+  for (int i = 0; i < NOTE_COUNT; i++) {
+    if (notes[i] == note) {
       // note found
       return i;
     }
@@ -57,22 +55,17 @@ int getNoteIndex(char *note)
   return -1;
 }
 
-int intervalToValue(char *interval)
-{
+int intervalToValue(char *interval) {
   String intervalValue = intervals->search(interval);
   return intervalValue.toInt();
 }
 
-int calculateWrappedNoteIndex(int virtualIndex)
-{
+int calculateWrappedNoteIndex(int virtualIndex) {
   int wholeCycles = floor(virtualIndex / NOTE_COUNT);
 
-  if (virtualIndex >= NOTE_COUNT)
-  {
+  if (virtualIndex >= NOTE_COUNT) {
     return virtualIndex - wholeCycles * NOTE_COUNT;
-  }
-  else
-  {
+  } else {
     return virtualIndex;
   }
 }
@@ -80,13 +73,11 @@ int calculateWrappedNoteIndex(int virtualIndex)
 // TODO:
 // add logic to turn notes to b if previous note was a natural and the
 // current one is the sharp version
-void calculateMajorNotes(char *key)
-{
+void calculateMajorNotes(char *key) {
   int keyIndex = getNoteIndex(key);
 
   // calculate the all notes in the scale
-  for (int i = 0; i < 7; i++)
-  {
+  for (int i = 0; i < 7; i++) {
     // get the step of the interval
     int intervalValue = intervalToValue(major[i]);
 
@@ -98,21 +89,18 @@ void calculateMajorNotes(char *key)
   }
 }
 
-String generateRandomRiff(char *scaleNotes[])
-{
+String generateRandomRiff(char *scaleNotes[]) {
   String riff = "";
 
   // generate next naive riff notes randomly
-  for (int i = 0; i < RIFF_NOTE_COUNT; i++)
-  {
+  for (int i = 0; i < RIFF_NOTE_COUNT; i++) {
     int randomIndex = random(0, 6);
     char *note = scaleNotes[randomIndex];
 
     riff.concat(note);
 
     // add comma (unless it's the last note)
-    if (i != RIFF_NOTE_COUNT - 1)
-    {
+    if (i != RIFF_NOTE_COUNT - 1) {
       riff.concat(", ");
     }
   }
@@ -120,9 +108,9 @@ String generateRandomRiff(char *scaleNotes[])
   return riff;
 }
 
-// these constants are loaded into a dictionary during setup and are used to calculate the scale relative to each key
-void initializeIntervalMappings()
-{
+// these constants are loaded into a dictionary during setup and are used to
+// calculate the scale relative to each key
+void initializeIntervalMappings() {
   intervals->insert("1", "0");
   intervals->insert("b2", "1");
   intervals->insert("2", "2");
@@ -140,29 +128,25 @@ void initializeIntervalMappings()
   intervals->insert("7", "11");
 }
 
-void checkRotaryEncoderMovement()
-{
-  // tell the encoder we had a tick - this allows it to debounce the multiple signals per segment
+void checkRotaryEncoderMovement() {
+  // tell the encoder we had a tick - this allows it to debounce the multiple
+  // signals per segment
   encoder.tick();
 
   // get the current physical position and calc the logical position
   int newPos = encoder.getPosition();
 
   // constrain output values to min and max index in the notes array
-  if (newPos < KEY_MIN)
-  {
+  if (newPos < KEY_MIN) {
     encoder.setPosition(KEY_MIN);
     newPos = KEY_MIN;
-  }
-  else if (newPos > KEY_MAX)
-  {
+  } else if (newPos > KEY_MAX) {
     encoder.setPosition(KEY_MAX);
     newPos = KEY_MAX;
   }
 
   // check if key changed
-  if (keyIndex != newPos)
-  {
+  if (keyIndex != newPos) {
     // update key
     keyIndex = newPos;
     char *newKey = notes[keyIndex];
@@ -180,10 +164,8 @@ void checkRotaryEncoderMovement()
   }
 }
 
-void displayRandomRiffNotes()
-{
-  if (myDisplay.displayAnimate())
-  {
+void displayRandomRiffNotes() {
+  if (myDisplay.displayAnimate()) {
     // reset display after each animation
     myDisplay.displayReset();
 
@@ -198,12 +180,12 @@ void displayRandomRiffNotes()
     riff.toCharArray(buf, riff.length() + 1);
 
     // display generated riff
-    myDisplay.displayText(buf, PA_CENTER, 100, 0, PA_SCROLL_LEFT, PA_SCROLL_LEFT);
+    myDisplay.displayText(buf, PA_CENTER, 100, 0, PA_SCROLL_LEFT,
+                          PA_SCROLL_LEFT);
   }
 }
 
-void setup()
-{
+void setup() {
   Serial.begin(9600);
   myDisplay.begin();
   myDisplay.setIntensity(0);
@@ -217,8 +199,7 @@ void setup()
   calculateMajorNotes(notes[keyIndex]);
 }
 
-void loop()
-{
+void loop() {
   checkRotaryEncoderMovement();
   displayRandomRiffNotes();
 }
