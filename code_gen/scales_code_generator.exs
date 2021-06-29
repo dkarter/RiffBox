@@ -1,4 +1,12 @@
 defmodule ScalesCodeGenerator do
+  @moduledoc """
+  This is just some quick and dirty music theory based scale generator.
+
+  There's a more modular way to approach this and I may end up extracting the
+  logic into a module one day, but for now this serves the purpose of generating
+  some static C++ constatnts for use in an Arduino based project.
+  """
+
   @notes ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"]
 
   @scale_formulas %{
@@ -29,13 +37,115 @@ defmodule ScalesCodeGenerator do
     "7" => 11
   }
 
+  @cpp_file_header """
+  /* ******************************************
+   *  Auto Generated File                     *
+   *                                          *
+   *  Do not edit manually!                   *
+   * ******************************************/
+
+  """
+
   def run do
+    generate_cpp_header_file()
+
     generate_keys()
-    |> Enum.map(fn key -> {key, generate_scales_for_key(key)} end)
-    |> Enum.map(&key_modes_to_cpp/1)
-    |> List.flatten()
-    |> Enum.join("\n")
-    |> IO.puts()
+    |> generate_cpp_file()
+  end
+
+  defp generate_cpp_header_file do
+    code = """
+    #include <Arduino.h>
+
+    void notesForMode(int key, int mode, String *scaleNotes);
+    """
+
+    File.write!("./src/Music.h", [@cpp_file_header, code] |> Enum.join("\n"))
+  end
+
+  # faking dictionary access
+  defp generate_cpp_file(keys) do
+    includes = """
+    #include <Arduino.h>
+    #include <Music.h>
+    #include <string.h>
+    """
+
+    constants =
+      keys
+      |> Enum.map(fn key -> {key, generate_scales_for_key(key)} end)
+      |> Enum.map(&key_modes_to_cpp/1)
+      |> List.flatten()
+      |> Enum.join("\n")
+
+    function_start = """
+    \n
+    void copyNotes(String *from, String *to) {
+      for (int i; i < 7; i++) {
+        to[i] = from[i];
+      }
+    }
+
+    void notesForMode(int key, int mode, String *scaleNotes) {
+      String selector = String(String(key) + "," + String(mode));
+    """
+
+    modes = Map.keys(@scale_formulas)
+
+    cases =
+      for key <- keys, mode <- modes do
+        var_name = cpp_scale_var_name(key, mode)
+        key_index = Enum.find_index(keys, &(&1 == key))
+        mode_index = Enum.find_index(modes, &(&1 == mode))
+
+        """
+            if (key == #{key_index} && mode == #{mode_index}) {
+              copyNotes(#{var_name}, scaleNotes);
+              return;
+            }
+        """
+      end
+
+    function_end = """
+    }
+    """
+
+    code =
+      [
+        @cpp_file_header,
+        includes,
+        constants,
+        function_start,
+        cases,
+        function_end
+      ]
+      |> Enum.join("\n")
+
+    File.write!("./src/Music.cpp", code, [])
+  end
+
+  defp key_modes_to_cpp({key, modes}) do
+    modes
+    |> Enum.map(fn {mode_name, notes} ->
+      size = length(notes)
+      notes = notes |> Enum.map(fn n -> "\"#{n}\"" end) |> Enum.join(", ")
+      var_name = cpp_scale_var_name(key, mode_name)
+      "String #{var_name}[#{size}] = {#{notes}};"
+    end)
+  end
+
+  defp cpp_scale_var_name(key, mode) do
+    note_name =
+      key
+      |> String.split("")
+      |> Enum.map(fn
+        "#" -> "Sharp"
+        "b" -> "Flat"
+        note -> String.downcase(note)
+      end)
+
+    mode_name = mode |> Atom.to_string() |> String.capitalize()
+    "#{note_name}#{mode_name}"
   end
 
   defp generate_keys do
@@ -47,7 +157,7 @@ defmodule ScalesCodeGenerator do
           # inverted accidental
           if accidental?(prev_note) do
             inverted_accidental = invert_accidental(prev_note)
-            acc ++ [next_note, inverted_accidental]
+            acc ++ [inverted_accidental, next_note]
           else
             acc ++ [next_note]
           end
@@ -92,7 +202,6 @@ defmodule ScalesCodeGenerator do
 
     Enum.map(formula, fn interval ->
       interval_value = Map.get(@interval_mappings, interval)
-      # there's a bug here somewhere with the first number
       virtual_index = key_index + interval_value
       note_at_virtual_index(virtual_index)
     end)
@@ -168,27 +277,6 @@ defmodule ScalesCodeGenerator do
     else
       virtual_index
     end
-  end
-
-  defp note_to_const_name(note) do
-    note
-    |> String.split("")
-    |> Enum.map(fn
-      "#" -> "Sharp"
-      "b" -> "Flat"
-      note -> String.downcase(note)
-    end)
-  end
-
-  defp key_modes_to_cpp({key, modes}) do
-    modes
-    |> Enum.map(fn {mode_name, notes} ->
-      mode = mode_name |> Atom.to_string() |> String.capitalize()
-      size = length(notes)
-      notes = notes |> Enum.map(fn n -> "\"#{n}\"" end) |> Enum.join(", ")
-      var_name = "#{note_to_const_name(key)}#{mode}"
-      "char *#{var_name}[#{size}] = {#{notes}};"
-    end)
   end
 
   defp sharp?(note), do: String.match?(note, ~r/[A-Z]#/)
