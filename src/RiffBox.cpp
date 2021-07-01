@@ -17,11 +17,19 @@
 #define KEY_DT 5
 #define KEY_SW 8
 
+#define KEY_MIN 0
+#define KEY_MAX 11
+
+// Mode selector (Rotary Encoder) pinout
+#define MODE_CLK 7
+#define MODE_DT 6
+#define MODE_SW 3
+
+#define MODE_MIN 0
+#define MODE_MAX 6
+
 // music constants
 #define NOTE_COUNT 12
-
-const int KEY_MIN = 0;
-const int KEY_MAX = 11;
 
 int keyIndex = 0;
 int modeIndex = 0;
@@ -55,6 +63,9 @@ MD_Parola myDisplay = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
 // Setup a RotaryEncoder with 2 steps per latch for the 2 signal input pins:
 RotaryEncoder keySelector(KEY_CLK, KEY_DT, RotaryEncoder::LatchMode::FOUR3);
 
+// Setup a RotaryEncoder with 2 steps per latch for the 2 signal input pins:
+RotaryEncoder modeSelector(MODE_CLK, MODE_DT, RotaryEncoder::LatchMode::FOUR3);
+
 int intervalToValue(String interval) {
   for (String *intervalMapping : intervals) {
     if (intervalMapping[0].compareTo(interval) == 0) {
@@ -73,7 +84,7 @@ int calculateWrappedNoteIndex(int virtualIndex) {
   }
 }
 
-// TODO:
+// TODO(dorian):
 // add logic to turn notes to b if previous note was a natural and the
 // current one is the sharp version
 void calculateScaleNotes() {
@@ -109,6 +120,41 @@ String generateRandomRiff() {
   }
 
   return riff;
+}
+
+void checkModeSelector() {
+  // tell the encoder we had a tick - this allows it to debounce the multiple
+  // signals per segment
+  modeSelector.tick();
+
+  // get the current physical position and calc the logical position
+  int newPos = modeSelector.getPosition();
+
+  // constrain output values to min and max index in the modes array
+  if (newPos < MODE_MIN) {
+    modeSelector.setPosition(MODE_MIN);
+    newPos = MODE_MIN;
+  } else if (newPos > MODE_MAX) {
+    modeSelector.setPosition(MODE_MAX);
+    newPos = MODE_MAX;
+  }
+
+  // check if mode changed
+  if (modeIndex != newPos) {
+    // update mode
+    modeIndex = newPos;
+    String newMode = modes[modeIndex];
+
+    // display new mode
+    myDisplay.displayClear();
+    char buf[20];
+    newMode.toCharArray(buf, newMode.length() + 1);
+    myDisplay.displayText(buf, PA_CENTER, 100, 1000, PA_SCROLL_LEFT,
+                          PA_SCROLL_LEFT);
+
+    // recalculate scale notes based on new mode
+    calculateScaleNotes();
+  }
 }
 
 void checkKeySelector() {
@@ -180,15 +226,22 @@ void setupKeySelector() {
   keySelector.setPosition(keyIndex);
 }
 
+void setupModeSelector() {
+  // set up intial position of rotary encoder
+  modeSelector.setPosition(modeIndex);
+}
+
 void setup() {
   Serial.begin(9600);
   setupDisplay();
   setupKeySelector();
+  setupModeSelector();
 
   calculateScaleNotes();
 }
 
 void loop() {
   checkKeySelector();
+  checkModeSelector();
   displayRandomRiffNotes();
 }
