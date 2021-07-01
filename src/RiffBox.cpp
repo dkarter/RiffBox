@@ -12,10 +12,10 @@
 #define MAX_DEVICES 4
 #define CS_PIN 3
 
-// Rotary encoder pinout
-#define inputCLK 4
-#define inputDT 5
-#define inputSW 8
+// Key selector (Rotary Encoder) pinout
+#define KEY_CLK 4
+#define KEY_DT 5
+#define KEY_SW 8
 
 // music constants
 #define NOTE_COUNT 12
@@ -53,7 +53,7 @@ int scaleNotesIndices[7];
 MD_Parola myDisplay = MD_Parola(HARDWARE_TYPE, CS_PIN, MAX_DEVICES);
 
 // Setup a RotaryEncoder with 2 steps per latch for the 2 signal input pins:
-RotaryEncoder encoder(inputCLK, inputDT, RotaryEncoder::LatchMode::FOUR3);
+RotaryEncoder keySelector(KEY_CLK, KEY_DT, RotaryEncoder::LatchMode::FOUR3);
 
 int intervalToValue(String interval) {
   for (String *intervalMapping : intervals) {
@@ -111,20 +111,20 @@ String generateRandomRiff() {
   return riff;
 }
 
-void checkRotaryEncoderMovement() {
+void checkKeySelector() {
   // tell the encoder we had a tick - this allows it to debounce the multiple
   // signals per segment
-  encoder.tick();
+  keySelector.tick();
 
   // get the current physical position and calc the logical position
-  int newPos = encoder.getPosition();
+  int newPos = keySelector.getPosition();
 
   // constrain output values to min and max index in the notes array
   if (newPos < KEY_MIN) {
-    encoder.setPosition(KEY_MIN);
+    keySelector.setPosition(KEY_MIN);
     newPos = KEY_MIN;
   } else if (newPos > KEY_MAX) {
-    encoder.setPosition(KEY_MAX);
+    keySelector.setPosition(KEY_MAX);
     newPos = KEY_MAX;
   }
 
@@ -168,20 +168,27 @@ void displayRandomRiffNotes() {
   }
 }
 
-void setup() {
-  Serial.begin(9600);
+void setupDisplay() {
   myDisplay.begin();
   myDisplay.setIntensity(0);
   myDisplay.setTextAlignment(PA_CENTER);
   myDisplay.displayClear();
+}
 
+void setupKeySelector() {
   // set up intial position of rotary encoder
-  encoder.setPosition(keyIndex);
+  keySelector.setPosition(keyIndex);
+}
+
+void setup() {
+  Serial.begin(9600);
+  setupDisplay();
+  setupKeySelector();
 
   calculateScaleNotes();
 }
 
 void loop() {
-  checkRotaryEncoderMovement();
+  checkKeySelector();
   displayRandomRiffNotes();
 }
